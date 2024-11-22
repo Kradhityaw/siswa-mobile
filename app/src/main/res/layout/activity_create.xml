@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".CreateActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Tambah Siswa"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/arrow_back_24px"
+        android:background="#FF9800" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_marginBottom="8dp"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Siswa:" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cursorColor="#FF9800"
+            app:boxStrokeColor="#FF9800"
+            app:hintTextColor="#FF9800"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/createNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin:" />
+
+        <RadioGroup
+            android:id="@+id/genderRadios"
+            android:layout_marginBottom="8dp"
+            android:theme="@style/CustomRadioBtn"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/L"
+                android:layout_marginRight="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laki - Laki" />
+
+            <RadioButton
+                android:id="@+id/P"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perempuan" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_marginBottom="12dp"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sekolah:" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:strokeColor="#999999"
+            app:strokeWidth="1dp"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="5dp">
+
+            <Spinner
+                android:id="@+id/spinnerSekolah"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/createBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simpan" />
+
+    </LinearLayout>
+
+</LinearLayout>

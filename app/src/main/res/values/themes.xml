@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SiswaMobileApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#FF9800</item>
+        <item name="colorPrimaryVariant">#F57C00</item>
+        <item name="colorSecondary">#FF5722</item>
+        <item name="colorAccent">#FFCC80</item>
+        <item name="android:colorBackground">#FFF3E0</item>
+        <item name="android:statusBarColor">#FF9800</item>
+    </style>
+
+    <style name="CustomRadioBtn" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:colorControlNormal">#7a7a7a</item>
+        <item name="android:colorControlActivated">#FF9800</item>
+        <item name="android:colorControlHighlight">#FF9800</item>
+    </style>
+
+    <style name="Theme.SiswaMobileApp" parent="Base.Theme.SiswaMobileApp" />
+</resources>
